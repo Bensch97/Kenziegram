@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+    body
+        h1= header
+        form(action="/uploads", method="post", enctype="multipart/form-data")
+            input(type="file", name="myFile", id="fileToUpload")
+            input(type="submit", value="Upload Image", name="submit")
+        each imageSRC in imgArray
+            img(src= imageSRC)
+            br
