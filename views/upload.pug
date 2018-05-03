@@ -3,5 +3,5 @@ html
     head
     body
         h1= header
-        img(src= imageSRC)
-        button(type="button" onclick="location.href = 'http://localhost:3000/';") Go Back
+        img(src=`/uploads/${image.filename}`)
+        a(href="/") Go Back
